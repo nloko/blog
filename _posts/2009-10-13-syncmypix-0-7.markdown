@@ -1,0 +1,36 @@
+---
+comments: true
+date: 2009-10-13 04:32:00
+layout: post
+slug: syncmypix-0-7
+title: SyncMyPix 0.7
+wordpress_id: 25
+categories:
+- Android
+tags:
+- Android
+- SyncMyPix
+---
+
+I've been listening to you, users of [SyncMyPix](http://code.google.com/p/syncmypix/). And, when I'm not listening, I'm reading your minds.
+
+Version 0.7 brings you two major features. One, an option to crop synced pictures where SyncMyPix will scale and crop a 96px square using the midpoint of the original as its center. And, two, you can now manually crop pictures from the results screen. The cropping interface will even highlight faces for you!
+
+In addition to the above, this version also includes the following:
+
+* New logo
+* New main screen
+* Updated about dialog
+* Removed menu buttons where appropriate
+* Login button removed; sync process will request login, if required
+* Will only sync if social network picture is new; new result: "Skipped: no update required"
+* If multiple contacts found, a separate entry for each will appear in results
+* View synced contact from results screen via long press
+
+And, for your viewing pleasure, I'll leave you with a few screenshots...
+
+[![](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDS5KqIJI/AAAAAAAABTU/Mm_qOYguG9k/s400/Screenshot-Android+Emulator+%28my_avd:5554%29.png)](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDS5KqIJI/AAAAAAAABTU/Mm_qOYguG9k/s1600-h/Screenshot-Android+Emulator+%28my_avd:5554%29.png)
+[![](http://1.bp.blogspot.com/_d0oLVL7lqBw/StQDSZ21jkI/AAAAAAAABTM/ERC-Tmlh-6E/s400/Screenshot-Android+Emulator+%28my_avd:5554%29-1.png)](http://1.bp.blogspot.com/_d0oLVL7lqBw/StQDSZ21jkI/AAAAAAAABTM/ERC-Tmlh-6E/s1600-h/Screenshot-Android+Emulator+%28my_avd:5554%29-1.png)
+[![](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDR4k-ZlI/AAAAAAAABTE/O5GMl7KXSQI/s400/Screenshot-Android+Emulator+%28my_avd:5554%29-2.png)](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDR4k-ZlI/AAAAAAAABTE/O5GMl7KXSQI/s1600-h/Screenshot-Android+Emulator+%28my_avd:5554%29-2.png)
+[![](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDRSXI6AI/AAAAAAAABS8/2gTIqM3AuD0/s400/Screenshot-Android+Emulator+%28my_avd:5554%29-3.png)](http://4.bp.blogspot.com/_d0oLVL7lqBw/StQDRSXI6AI/AAAAAAAABS8/2gTIqM3AuD0/s1600-h/Screenshot-Android+Emulator+%28my_avd:5554%29-3.png)
+[![](http://2.bp.blogspot.com/_d0oLVL7lqBw/StQDQ_8cFLI/AAAAAAAABS0/7a31pYevMwk/s400/Screenshot-Android+Emulator+%28my_avd:5554%29-4.png)](http://2.bp.blogspot.com/_d0oLVL7lqBw/StQDQ_8cFLI/AAAAAAAABS0/7a31pYevMwk/s1600-h/Screenshot-Android+Emulator+%28my_avd:5554%29-4.png)

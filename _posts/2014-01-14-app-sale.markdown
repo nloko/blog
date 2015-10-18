@@ -1,0 +1,20 @@
+---
+layout: post
+title: "App Sale!"
+date: 2014-01-14 20:46
+comments: true
+categories: Android App 
+---
+
+<style>
+</style>
+It's a post-Christmas, post-Boxing Day (for my fellow Canadians), late to the party, app sale!
+
+<img src="http://www.ticklebugapp.ca/img/icon.png"  alt="Ticklebug for Android" style="float: left;margin:0 20px;"/>
+<a href="https://play.google.com/store/apps/details?id=com.nloko.android.ticklebug.pro">Ticklebug Pro</a> is on sale for 50% off. Get it now for only $1.49! Ticklebug is a super smart and simple Android app that lets you remote control your Windows and Mac computers from the comfort of your mobile device.
+
+<p style="clear:both;"></p>
+
+Pictures are better than words, and videos are better than pictures. So, take a look and <a href="http://www.ticklebugapp.ca">see what Ticklebug can do</a>.
+
+-><iframe width="560" height="315" src="https://www.youtube.com/embed/0UfeGpUOKe0" frameborder="0" allowfullscreen></iframe><-

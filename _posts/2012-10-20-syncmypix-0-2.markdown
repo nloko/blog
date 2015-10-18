@@ -1,0 +1,35 @@
+---
+comments: false
+date: 2012-10-20 08:01:37
+layout: post
+slug: syncmypix-0-2
+title: SyncMyPix 0.2
+wordpress_id: 640
+categories:
+- Android
+- Programming
+tags:
+- SyncMyPix
+---
+
+Remember [SyncMyPix](https://play.google.com/store/apps/details?id=com.nloko.android.syncmypix&hl=en)?!?
+
+I do...vaguely. I've been putting off integrating some fine work from contributors, and I figured that **it's been long enough!**.
+
+I've finally gotten around to merging in their work creating version **0.2**. Here's a quick summary of what's gone into this release:
+	
+  * Update contributors in [README](https://github.com/nloko/SyncMyPix/blob/master/README.md)
+  * Remove read log permission
+  * Default to high quality photo setting and remove setting
+  * Fix problem with photos not getting cached to SD card
+  * Improve Greek name matching ([thanks Diomidis Spinellis](https://github.com/nloko/SyncMyPix/commit/3dc398db80e7aea938c9c604f6f7af5a14c577f7))
+  * Fix name matching when names contain Turkish characters ([thanks Deadknight](https://github.com/nloko/SyncMyPix/commit/4c8a0084c6388da52ccbcd71216a12b15e1a30c5))
+  * ICS fixes (crop view, etc.)
+  * Use Facebook Connect SDK instead of homegrown API library
+  * **_Attempt_** to get highest resolution photos possible from Facebook
+
+Those last 3 are also [thanks to Deadknight](https://github.com/nloko/SyncMyPix/commit/151a96098b43f2e19216ceb6d88ea2e407a383b0).
+
+Unfortunately, I haven't had any time to work on SyncMyPix, hence the delay with getting out a release with all these improvements. I've been quite busy with work and other projects. So busy, in fact, that I'm calling this my last release of SyncMyPix. I haven't tested this enough to feel comfortable releasing it through the market (_I actually did publish it, but later removed it_). But, I didn't want that to stop me from sharing this, so the [downloads](https://github.com/nloko/SyncMyPix/downloads) are available from Github. I'm going to be **removing SyncMyPix from the store a week from today**.
+
+I'm glad it's been useful to a lot of people, but I've got to move on to other things. I'll continue to host the source code on [Github](https://github.com/nloko/SyncMyPix), as I'd love to see someone take the app and improve on it, as it seems there are still people that are interested. So, please, feel free to [fork](https://github.com/nloko/SyncMyPix/fork) it and make it your own!

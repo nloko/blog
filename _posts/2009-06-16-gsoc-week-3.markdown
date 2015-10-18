@@ -1,0 +1,47 @@
+---
+comments: true
+date: 2009-06-16 15:00:00
+layout: post
+slug: gsoc-week-3
+title: 'GSoC: Week 3'
+wordpress_id: 13
+categories:
+- Banshee
+- Summer of Code
+tags:
+- Banshee
+- GNOME
+- SoC
+- Telepathy
+---
+
+Well, things are really cooking now. To review, my TODO for this week was to get as much of the tubing (ability to send arbitrary data between IM contacts) related stuff finished. I've decided to adapt an idea I call a "dispatcher." I guess it is basically a wrapper around the [Telepathy Requests interface](http://telepathy.freedesktop.org/spec.html#org.freedesktop.Telepathy.Connection.Interface.Requests). The mechanism lets me request "activities" (basically, a tube and Dbus connection wrapped into one object) and also lets me know when there are incoming ones. I have designed this dispatcher idea so it will easily extend to file transfers (and possibly stream tubes, if needed in the future) as well. So, the tube stuff is pretty much done.  
+  
+**Other notable things that happened this week: ** 
+
+* No updates to Telepathy bindings! That was nice, as last week the [Tube interface](http://telepathy.freedesktop.org/spec.html#org.freedesktop.Telepathy.Channel.Interface.Tube) was undrafted and I had to update the bindings and test that everything was still working. (Forgot to mention that in last week's report).  
+* Workaround for MissionControl.AccountStatusChanged duplicate events. I've implemented a really dirty hack to suppress duplicate events. I don't know why Telepathy does this, but it does. I have been unable to get an answer on IRC.  
+* Another annoyance I have is that attempting to register and use objects on a NDesk.DBus.Connection object within the same application process (ie. single instance of Banshee) blocks indefinitely when accessing a method on the exported dbus object. So, when I am testing tube stuff, I am now using my laptop and desktop computer for a producer and a consumer. Slows me down a bit, but it works. :)  
+* Now, the big one: I am able to send/receive a contact's music library over a tube!! Yes, it is working. It's very rough at the moment, however. Maybe I'll put together a screencast for next week's report. For now, some screenshots will have to do:
+
+[![](http://1.bp.blogspot.com/_d0oLVL7lqBw/SltbvUnWhMI/AAAAAAAABHQ/HfuTZj61BQg/s320/Screenshot-Banshee+Media+Player.png)](http://1.bp.blogspot.com/_d0oLVL7lqBw/SltbvUnWhMI/AAAAAAAABHQ/HfuTZj61BQg/s1600-h/Screenshot-Banshee+Media+Player.png)
+
+Contact A offers Contact B a tube  
+
+[![](http://3.bp.blogspot.com/_d0oLVL7lqBw/SjfFlfr0KDI/AAAAAAAABG4/o67G-vn-Zdc/s320/Screenshot-Contact+Request.png)](http://3.bp.blogspot.com/_d0oLVL7lqBw/SjfFlfr0KDI/AAAAAAAABG4/o67G-vn-Zdc/s1600-h/Screenshot-Contact+Request.png)
+
+Contact B accepts tube  
+
+[![](http://1.bp.blogspot.com/_d0oLVL7lqBw/Sltc3i4tKnI/AAAAAAAABHg/5msTmEeT_uM/s320/Screenshot-Banshee+Media+Player-2.png)](http://1.bp.blogspot.com/_d0oLVL7lqBw/Sltc3i4tKnI/AAAAAAAABHg/5msTmEeT_uM/s1600-h/Screenshot-Banshee+Media+Player-2.png)
+
+Contact A begins loading library data  
+
+[![](http://4.bp.blogspot.com/_d0oLVL7lqBw/Sltb-oIAc4I/AAAAAAAABHY/2N-C8EFDpes/s320/Screenshot-Banshee+Media+Player-1.png)](http://4.bp.blogspot.com/_d0oLVL7lqBw/Sltb-oIAc4I/AAAAAAAABHY/2N-C8EFDpes/s1600-h/Screenshot-Banshee+Media+Player-1.png)
+
+Contact A has downloaded Contact B's library data  
+
+**TODO for this week:  **
+
+* Improve the process that takes place when IM contacts exchange library data. Namely, test more cases, do not block the UI, get tracks displaying as they are downloading instead of when finished downloading, etc.  
+
+If you've missed previous posts, the code is hosted on [Github](http://github.com/nloko/banshee/tree/gsoc). So, feel free to take a peek.

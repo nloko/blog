@@ -1,0 +1,24 @@
+---
+comments: true
+date: 2009-04-21 02:55:00
+layout: post
+slug: big-news
+title: BIG News
+wordpress_id: 7
+categories:
+- Banshee
+- Summer of Code
+tags:
+- Banshee
+- GNOME
+- SoC
+- Telepathy
+---
+
+Did I say big? I meant HUGE!  
+  
+I've been accepted to this year's [Google Summer of Code](http://www.google.ca/url?sa=t&source=web&ct=res&cd=1&url=http%3A%2F%2Fcode.google.com%2Fsoc%2F&ei=5TXtSZLLLJe4sgOcjsnqAQ&usg=AFQjCNHYqgEvTO1C4hLHRJeRalIWun65TQ&sig2=15AJp-nsZluEsC2iSFiQig) program. [My project](http://socghop.appspot.com/student_project/show/google/gsoc2009/gnome/t124022403765) will be an extension to the music management and playback application, [Banshee](http://banshee-project.org/). The extension will allow users to share their music libraries with their instant messaging contacts. What will be shared is all the metadata available in a users library. So, your IM friends can search your library and see what you're ratings are, BPM values, most played, etc. This work will not include streaming. However, that is very possible in the future. As well as things like importing/exporting metadata in between two different libraries across a network. But, don't quote me on that. ;) Some other cool things about this project are that it doesn't depend on proprietary protocols such as Apple's DAAP and not-so-technically inclined users don't need to know details like their friends' IP addresses and port numbers when they want to share things. All they have to do is click on the IM contact they want to share with and Banshee and [Telepathy](http://telepathy.freedesktop.org/wiki/) will take care of the rest. :)  
+  
+I hope to blog more details as the project progresses. There won't be anything real exciting to report until [after May 23rd](http://socghop.appspot.com/document/show/program/google/gsoc2009/faqs#timeline) when the coding will begin. Until then, I'll mostly be reading code, documentation, planning, chatting with the Banshee community, etc.  
+  
+If you're familiar with open source, feel free to get a sneak peak of what's in store by cloning [my Github repository](http://github.com/nloko/banshee-gsoc-demo/tree/telepathy) for a proof-of-concept work I did as part of my project proposal. It is coded as a Banshee extension (or plugin if you're more familiar with that term). Be forewarned, however, that it is not all that exciting. It is basically just a test of the [C# bindings](http://github.com/nloko/telepathy-sharp-gsoc/tree/master) required to hook up to the Telepathy D-bus interface (getting these bindings in a usable state was also part of my proposal). See the [README](http://github.com/nloko/banshee-gsoc-demo/tree/040e134d6972c5a3983171a1a6d83a246ec8ec54/banshee/src/Extensions/Banshee.Telepathy) for more information and installation requirements.

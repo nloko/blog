@@ -1,0 +1,47 @@
+---
+comments: true
+date: 2010-07-04 19:09:45
+layout: post
+slug: syncmypix-0-14-4
+title: SyncMyPix 0.14.4
+wordpress_id: 159
+categories:
+- Android
+tags:
+- Android
+- SyncMyPix
+---
+
+This post is a little overdue, but better late than never.
+
+Even though I've been extremely busy lately, I've still managed to churn out some updates to SyncMyPix. I last blogged about version 0.12. A lot has changed since then. Here's a quick summary of the most notable changes:
+
+* Improved picture download reliability
+* Improved picture quality
+* Added 'Cache to SD' option for up to 5Mb picture caching on SD card
+* Enabled installation on internal or SD memory for Froyo
+* Added 'Send Log' option for troubleshooting assistance
+* UI refresh
+* Crop option now  always based off original photos
+
+There are some other bug fixes here and there. For a complete listing, you can view the [change log](http://code.google.com/p/syncmypix/wiki/ChangeLog).
+
+**UI Refresh**
+
+My goal was fresh, bright, and simple. I think I've achieved that, but here's a screenshot so you can see for yourself.
+
+![](http://lh4.ggpht.com/_d0oLVL7lqBw/TBR-caA2hqI/AAAAAAAABgI/xdrr7ZozvMw/s400/SyncMyPix3.png)
+
+A much welcomed side effect of the changes was an improvement to the overall responsiveness of the UI. This is probably due to the removal of the background image and transparencies. The bar at the bottom provides handy access to common functions. I've seen a lot of apps put bars like this at the top of the application. But, to me it seems much more natural at the bottom. I typically hold my phone with one hand and operate it with my thumb. By placing the buttons at the bottom, they are easily accessible during one-handed operation.
+
+**Small Screen Support**
+
+Some have been asking about this. And, you'll be happy to know that it's coming. Actually, it's already [there](http://github.com/nloko/SyncMyPix/tree/master/res/layout-small/). It will be enabled in the next release.
+
+**Caching**
+
+By caching photos to the SD card, you get a speedier experience along with some savings to your precious data usage. If you have caching enabled (it is by default), the original photos will be cached in /Android/data/com.nloko.android.syncmypix/cache. By using this specific directory structure, if you should choose to uninstall SyncMyPix, the cache will be cleared as well (Android supports this on Froyo only). Hopefully, more developers will make use of this, as it is very annoying to have to clean this type of stuff up.
+
+You may notice that these photos will appear in your Gallery app. If you don't like this, you can add an empty file named ".nomedia" to the previously mentioned directory. Then, the Gallery will ignore the cache.
+
+I hope you've been enjoying the updates. Hopefully, I'll be able to keep them coming!

@@ -1,0 +1,32 @@
+---
+comments: true
+date: 2009-09-04 02:34:00
+layout: post
+slug: syncmypix-0-3
+title: SyncMyPix 0.3
+wordpress_id: 21
+categories:
+- Android
+tags:
+- Android
+- SyncMyPix
+---
+
+[![](http://3.bp.blogspot.com/_d0oLVL7lqBw/SqB9UzwJgFI/AAAAAAAABQk/bLrDC8u0YbA/s400/syncmypix+-+launcher.png)](http://3.bp.blogspot.com/_d0oLVL7lqBw/SqB9UzwJgFI/AAAAAAAABQk/bLrDC8u0YbA/s1600-h/syncmypix+-+launcher.png)
+
+A week after the initial release of my new Android app, and I'm already releasing version 0.3. The app has gone through a series of [bug fixes and enhancements](http://code.google.com/p/syncmypix/wiki/ChangeLog). However, v0.3 brings one feature that I think many will welcome. Thus, it deserves to be blogged about.
+
+[![](http://3.bp.blogspot.com/_d0oLVL7lqBw/SqB9UuMKNzI/AAAAAAAABQc/_trIjIc12vI/s400/syncmypix+-+config.png)](http://3.bp.blogspot.com/_d0oLVL7lqBw/SqB9UuMKNzI/AAAAAAAABQc/_trIjIc12vI/s1600-h/syncmypix+-+config.png)
+
+As you can see, the configuration page has a new option: Schedule. Now, you can schedule to sync your contact pictures on a daily, weekly, or monthly basis.
+
+[![](http://1.bp.blogspot.com/_d0oLVL7lqBw/SqB9UUBtBVI/AAAAAAAABQU/97MHWGdysM0/s400/syncmypix+-+scheduling.png)](http://1.bp.blogspot.com/_d0oLVL7lqBw/SqB9UUBtBVI/AAAAAAAABQU/97MHWGdysM0/s1600-h/syncmypix+-+scheduling.png)
+[![](http://2.bp.blogspot.com/_d0oLVL7lqBw/SqB9TwDQNcI/AAAAAAAABQM/KgIiVUm8Y6Q/s400/syncmypix+-+new+results.png)](http://2.bp.blogspot.com/_d0oLVL7lqBw/SqB9TwDQNcI/AAAAAAAABQM/KgIiVUm8Y6Q/s1600-h/syncmypix+-+new+results.png)
+
+Also, in v0.3, but new since v0.2, is a new sync results interface. It shows when the last sync operation started and completed. It also lets you see the results of the sync and you can view the profile pictures that your friends have set on the social network you are syncing with, whether they were synced successfully or not. Now, this interface is set up well to allow manually adding pictures to contacts where matches were unsuccessful. Look for that feature in a future release.
+
+[![](http://4.bp.blogspot.com/_d0oLVL7lqBw/SqB9Trq7roI/AAAAAAAABQE/syotAmzs974/s400/syncmypix+-+results+selected.png)](http://4.bp.blogspot.com/_d0oLVL7lqBw/SqB9Trq7roI/AAAAAAAABQE/syotAmzs974/s1600-h/syncmypix+-+results+selected.png)
+
+Here's a shot of what it looks like with a friend selected. It loses a little with all the blurring, so try it out to see for yourself.
+
+All this development has not been super smooth sailing. There is one problem that is really annoying. I have a workaround for it, but it is definitely not how I'd like it permanently solved. See this [wiki](http://code.google.com/p/syncmypix/wiki/GoogleSync) page for a detailed explanation. I'd love to hear from anyone that may have an idea for a better solution.

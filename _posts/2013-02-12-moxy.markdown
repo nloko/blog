@@ -1,0 +1,85 @@
+---
+comments: true
+date: 2013-02-12 02:23:02
+layout: post
+slug: moxy
+title: Moxy
+wordpress_id: 706
+categories:
+- Programming
+---
+
+She's alive. And, her name is Moxy.
+
+Simply put, Moxy is an [HTTP proxy](http://en.wikipedia.org/wiki/Proxy_server) that acts like a regular HTTP proxy, but it also allows you to mock responses, including support for delays and conditional statements.
+
+Why is this useful? Consider the following use case...
+
+You're working on a team of two. You're responsible for the client code and the other handles the server side. Let's call the other, Backend Billy. Backend Billy is great most of time. However, lately, he's been a little [distracted](https://www.facebook.com/), affecting his ability to deliver on the [RESTful API](http://en.wikipedia.org/wiki/Representational_state_transfer) that you need to get on with your client side work. Of course, being a good team, you spec out the API beforehand and have an interface to work against. You've got a bunch of code written up, but you can't test real, live network requests because the API service doesn't exist yet. Moxy can help here.
+
+Let's say you've spec'd out three endpoints...
+
+`http://api.awesomeapp.com/v1/awesome`
+`http://api.awesomeapp.com/v1/awesome/add`
+`http://api.awesomeapp.com/v1/awesome/:id`
+
+Using Moxy, you can add the following configuration entries into `moxy.conf`...
+
+
+
+
+    
+    url http://api.awesomeapp.com/v1/awesome/?$
+      get 200 awesome.json
+    
+    url http://api.awesomeapp.com/v1/awesome/add
+      get 400 awesome_add_error.json
+      post 200 awesome_add.json
+    
+    url http://api.awesomeapp.com/v1/awesome/?\?id\=.+
+      get 400 awesome_id_error.json
+      if created: get 200 awesome_id.json
+    
+
+
+
+
+
+Now, with Moxy up and running and your system configured to use her as an HTTP proxy, you can happily test your client code as if the backend is fully implemented, even though Backend Billy is still dilly dallying.
+
+Notice the line that reads `if created: get 200 awesome_thing.html`. It's a conditional statement with a condition called _created_. This allows the success response to be delayed until necessary. You can see and manipulate all conditions by browsing `http://localhost:9889/config/conditions`.
+
+Additionally, let's say you've added some nifty error handling logic when the _add_ request takes longer than 10 seconds. To test, you can modify `moxy.conf` as follows...
+
+
+
+
+    
+    url http://api.awesomeapp.com/v1/awesome/add
+      if delay: delay 13000
+      get 400 awesome_add_error.json
+      post 200 awesome_add.json
+    
+
+
+
+
+
+This tells Moxy to delay the response for 13 seconds if the _delay_ condition evaluates to true.
+
+And, if none of that interests you and you just want Billy to get back to work, you could sneak on to his computer and configure Moxy with something like...
+
+
+
+
+    
+    url ^.+\.facebook\.com
+      get 301
+      header Location http://awesomeapp.com/api/documentation
+
+
+
+
+
+
+Moxy is written in [Python](http://www.python.org/), open source, and available on [Github](https://github.com/nloko/moxy).

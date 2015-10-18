@@ -1,0 +1,42 @@
+---
+comments: true
+date: 2010-05-03 04:57:00
+layout: post
+slug: syncmypix-0-12
+title: SyncMyPix 0.12
+wordpress_id: 29
+categories:
+- Android
+tags:
+- Android
+- Facebook
+- SyncMyPix
+---
+
+Android 2.x users, your long, lost friend, [SyncMyPix](http://code.google.com/p/syncmypix/) is back! [Version 0.12 has just landed in the Android Market](http://market.android.com/search?q=SyncMyPix). It's been quite a long time since its been available there for anybody but Android 1.5 and 1.6 users. So, here's a quick summary of everything that's new since it was removed.
+	
+* Fixed Android 2.x bug preventing manual contact linking
+* Prevent read-only contacts from being synced / manually linked (2.x)
+* Added 'Allow Google Sync' option (always on for 2.x, toggle for 1.x)
+* Added some more informative error messages
+* Fixed some force closures
+* Fixed "fatal error" during sync when social network friend / contact is blank
+* Added version number to about dialog
+* Fixed exception when viewing results screen
+* Quick fix for "Session Invalid" error - Facebook API format changed for Users.GetLoggedInUser method
+* Fixed Results screen scrolling bug where pictures would not load for some friends
+* Fixed bug where manual picture cropping would not pull from Facebook
+
+
+Most of this is nothing new to Android 1.x users, as they didn't see any disruption in [updates](http://code.google.com/p/syncmypix/wiki/ChangeLoghttp://code.google.com/p/syncmypix/wiki/ChangeLog) from the Android market. For those not familiar with this app, you may be wondering why Android 2.x users were deprived for so long. Well, when people started getting their hands on Android 2.0 phones, I received a lot of reports that things were just not working properly. Without a 2.x phone in my hands, it proved to be rather difficult to troubleshoot. So, I decided to restrict the app to 1.x users until I could do some hands on work with a real live 2.x phone.
+
+Thanks to the [Android Developer Seeding Program](http://androidandme.com/2010/03/news/google-rewards-android-devs-with-free-phone-in-new-seeding-program/), I'm now the proud owner of a [Nexus One](http://www.google.com/phone) (thanks again, Google!) Over the past few months, I've been slowly debugging, testing, tweaking, and updating a [secret version](http://code.google.com/p/syncmypix/downloads/list) of the app that I shared with a select few people for some additional 2.x testing before re-publishing the app in the market. Apparently, it wasn't that big of a secret, as a SyncMyPix user recently pointed out that [AndroidAndMe](http://androidandme.com/) got their hands on the "secret" app and posted a full [review](http://androidandme.com/2010/04/reviews/syncmypix-pulls-facebook-contact-photos-to-android/). Anyway, the app seems to perform well for the users that I have received feedback from. So, it's finally found its way back to the market.
+  
+
+**'Allow Google Sync' option? For Real?**
+
+It's for real. By, popular demand, I've added an option called 'Allow Google Sync.' If you haven't guessed, it allows synced pictures to get pushed to corresponding GMail contacts. For Android 2.x users, it's on full time. I couldn't find an easy way to prevent the sync with GMail from taking place. This has three important consequences. 1) SyncMyPix, on 2.x phones, can no longer track which pictures it updates and which pictures the user updates outside of SyncMyPix,  2) the 'Skip existing pictures' setting is permanently disabled on Android 2.x. The reason is when the sync with GMail takes place, the pictures get modified on their end and then those changes get sent back down to your phone. So, SyncMyPix has no reliable way to determine what is what. And, finally, 3) GMail deteriorates the quality of the pictures. For Android 1.x users, only one of the above mentioned options can be enabled at a time. So, if 'Allow Google Sync' is on, 'Skip existing pictures' is off (and vice versa.) So, because of all this syncing going on, 1.x users may see some weirdness if the options are changed around between back-to-back syncs. There is a [FAQ](http://code.google.com/p/syncmypix/wiki/FAQ) that may help should anyone have issues.
+
+Now, before anyone points this out, I'm well aware that the app is not perfect, especially for Android 2.x. It really should be using a [SyncAdapter](http://developer.android.com/resources/samples/SampleSyncAdapter/index.html) to do its dirty work. But, I've got an extremely busy summer ahead of me, and I probably won't get around to doing this anytime soon. In addition, with the official Facebook app providing automatic photo syncing out-of-the-box, the motivation for me to re-work everything just isn't there. However, if any of you keeners out there have any interest in doing this, by all means, feel free. The [source code can be found on github](http://github.com/nloko/SyncMyPix). And, I'm more than happy to merge in the changes.
+
+Even though the Facebook app provides picture syncing, it doesn't provide some nice things that SyncMyPix does. Namely, manual picture cropping. So, this nifty little app hasn't been made obsolete quite yet. For awhile, I had wondered why so many people were still using SyncMyPix on Android 2.x. Now, as a Nexus One owner, I know why. It's still proving to be a useful, little app.

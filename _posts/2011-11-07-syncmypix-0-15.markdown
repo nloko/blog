@@ -1,0 +1,25 @@
+---
+comments: true
+date: 2011-11-07 02:36:02
+layout: post
+slug: syncmypix-0-15
+title: SyncMyPix 0.15
+wordpress_id: 351
+categories:
+- Android
+tags:
+- SyncMyPix
+---
+
+The good news is, I just pushed a new version of SyncMyPix to the market. And, if you're turkish or polish, you may notice improved name matching thanks to [some work from a new contributor](https://github.com/nloko/SyncMyPix/pull/4). The bad news is, unless you're turkish or polish, there's nothing to get excited about. To be honest, more came out of this release than went in.
+
+Here's the summary of changes:
+	
+* Minimum supported SDK is level 8 (Froyo)
+* Removed _Send Log _option
+
+I'm bumping the OS requirement up to workaround an Android [SSL bug](http://code.google.com/p/android/issues/detail?id=17680). It's quite sad that it has come to this as a solution. But, I just don't have the energy or motivation to code up a fix that, in my opinion, would be a sloppy workaround for an OS bug. And, I've removed the _Send Log _option because its more than served its purpose.
+
+I know some users might be upset about my so called _solution_, so I've provided an [app build on code.google.com](http://syncmypix.googlecode.com/files/SyncMyPix.apk) that provides legacy support. That is, the legacy build runs on Android 1.5 and up.
+
+I'm quite happy that users have found SyncMyPix so useful. It's been a lot of fun developing it. Unfortunately, this will probably be the last bit of work I put into it for awhile. However, the [source is available](https://github.com/nloko/SyncMyPix) on github. And, pull requests are always welcome.
