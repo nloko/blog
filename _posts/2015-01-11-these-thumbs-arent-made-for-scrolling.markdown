@@ -16,15 +16,19 @@ Below, on the left, you'll find the usual collapsing section user experience you
 <div class="clearfix">
   <div class="sm-col sm-col-6">
   <h5>Without Improvement</h5>
+  <div style="overflow:auto;-webkit-overflow-scrolling:touch">
   <iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_before.html" seamless>
   <p>Your browser sucks.</p>
   </iframe>
   </div>
+  </div>
   <div class="sm-col sm-col-6">
     <h5>With Improvement</h5>
+    <div style="overflow:auto;-webkit-overflow-scrolling:touch">
     <iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_after.html" seamless>
     <p>Your browser sucks.</p>
     </iframe>
+    </div>
   </div>
 </div>
 
