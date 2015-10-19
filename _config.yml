@@ -5,7 +5,7 @@ email:       hello@nloko.ca
 author:      Neil Loknath
 description: "Thoughts from a Software Developer who builds things that follow you where ever you go."
 baseurl:     ""
-url:         "https://blog.nloko.ca/"
+url:         "http://blog.nloko.ca/"
 date_format: "%b %-d, %Y"
 
 highlighter: pygments
