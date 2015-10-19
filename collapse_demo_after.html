@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by nloko (http://jsbin.com/derige/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+html, body {
+  font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.collapsible {
+  background: white;
+}
+
+.collapsible > * {
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.collapsible-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  padding-left: 50px;
+  background: white;
+}
+
+.collapsible-title.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.85em;
+  z-index: 999;
+}
+
+.collapsible-title::before {
+  color: #6f6f6f;
+  content: '>';
+  position: absolute;
+  left: 20px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.collapsed .collapsible-title::before {
+    -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.collapsible-content {
+  max-height: 99999px;
+  padding: 0 10px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.collapsed .collapsible-content {
+  min-height: 0;
+  max-height: 0;
+  overflow: hidden;
+    margin-top: 0px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="collapsible collapsed">
+  <div class="collapsible-title">Title 1</div>
+    <div class="collapsible-content">
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+    </div>
+  </div>
+  <div class="collapsible collapsed">
+  <div class="collapsible-title">Title 2</div>
+    <div class="collapsible-content">
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+    </div>
+  </div>
+    <div class="collapsible collapsed">
+  <div class="collapsible-title">Title 3</div>
+    <div class="collapsible-content">
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+      
+      Banh mi DIY typewriter beard. Cray four dollar toast bespoke Godard brunch twee. Lumbersexual jean shorts quinoa, keytar keffiyeh vegan American Apparel Pitchfork. Drinking vinegar Intelligentsia squid Etsy, viral post-ironic Pinterest letterpress tote bag American Apparel pickled locavore swag. +1 pork belly gluten-free, XOXO Marfa forage Thundercats health goth church-key meditation Etsy narwhal trust fund whatever cred. Ugh meggings PBR, Vice biodiesel wolf freegan Schlitz Williamsburg sriracha. Skateboard kitsch selvage flannel.
+
+Whatever food truck cliche, hashtag swag heirloom Godard Blue Bottle American Apparel High Life flannel jean shorts tofu selfies Austin. Before they sold out salvia mumblecore, Brooklyn Vice bicycle rights brunch squid. Pitchfork distillery cliche flexitarian cronut hella meditation, pork belly mustache master cleanse drinking vinegar selvage bitters. Banh mi you probably haven't heard of them retro, cold-pressed slow-carb craft beer keffiyeh +1 Schlitz Pitchfork distillery. Flexitarian lumbersexual bespoke, health goth cred Pinterest seitan. Bushwick typewriter 3 wolf moon, Williamsburg taxidermy hella try-hard cornhole Brooklyn retro selfies kogi. Banksy flannel twee pour-over, fap cardigan lo-fi Marfa semiotics PBR&B Tumblr.
+
+Leggings pop-up Odd Future, messenger bag chillwave PBR&B plaid slow-carb drinking vinegar tote bag Neutra Helvetica. Bushwick artisan vinyl stumptown, street art gentrify Vice post-ironic chambray leggings taxidermy occupy yr. Organic meggings vinyl Echo Park. Umami master cleanse typewriter, Brooklyn twee Portland Schlitz. Chillwave ennui bitters, fingerstache narwhal umami XOXO direct trade mumblecore actually post-ironic health goth. Vice Intelligentsia cred, selfies synth pop-up sartorial photo booth semiotics mixtape. Ennui distillery Pinterest, YOLO kogi 8-bit aesthetic.
+
+Kogi synth gluten-free Pinterest master cleanse. Gentrify Kickstarter cold-pressed sartorial Tumblr trust fund. Cold-pressed gastropub sriracha, fingerstache freegan Blue Bottle 3 wolf moon flannel keffiyeh Etsy Godard ethical authentic letterpress. Wayfarers wolf plaid, occupy cornhole tofu fap. Vice migas Helvetica fixie Shoreditch. Banjo narwhal gluten-free organic brunch vegan irony Shoreditch, semiotics bespoke. Ugh deep v freegan synth 8-bit meh.
+    </div>
+  </div>
+<script id="jsbin-javascript">
+$(function() {
+  $(".collapsible-title").click(function() {
+    var wasFixed = $(this).hasClass("fixed");
+    $(this).removeClass("fixed").parent().toggleClass("collapsed");
+    if (wasFixed) {
+      window.scrollTo(0, $(this).offset().top);
+    }
+  });
+  
+  $(document).on("touchmove scroll", function() {
+    var offset = $(this).scrollTop();
+    
+    $(".collapsible-title").each(function() {
+      if ($(this).parent().hasClass("collapsed")) {
+        return;
+      }
+      
+      var $content = $(this).siblings(".collapsible-content");
+      if ($(this).hasClass("fixed") && offset <= $content.offset().top) {
+        $(this).removeClass("fixed");
+//         $content.css("padding-top", 0);
+        return;
+      } else if ($(this).offset().top < offset) {
+//         $content.css("padding-top", $(this).height());
+        $(this).addClass("fixed");
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>

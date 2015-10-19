@@ -15,7 +15,7 @@ tags:
 
 Who doesn't like a good pool? Great for swimming, but even better for concurrency. This awesome kind of pool is called a thread pool. The one I've crafted that I'm about to show you can start with _x_ number of threads and size itself up to _y_ number of threads if the number of queued tasks grows above a certain threshold. You'll also notice that once the queue is empty, the number of active threads drops back down to the minimum. The minimum can even be zero. Many platforms provide concurrent utility classes for accomplishing this or similar behaviour. However, if you're writing code on a platform, such as [J2ME](http://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition), you'll be out of luck. So, without further ado, here it is:
 
-```    
+~~~ java     
 //
 //  DynamicThreadPool.java
 //
@@ -234,6 +234,6 @@ public class DynamicThreadPool {
 		}
 	}
 }
-```
+~~~ 
 
 As you can see, there's a lot of print statements in there for testing purposes. The testing I've done so far is fairly minimal. So, you'll likely want to play around with this before putting it to work. I'm confident that it's very close to solid, however. Also, depending on what Java platform you'll be using this code on, you may need to swap out the dependancy on the [Queue](http://download.oracle.com/javase/1.5.0/docs/api/java/util/Queue.html) interface for something that works for you.

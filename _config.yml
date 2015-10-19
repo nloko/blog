@@ -1,14 +1,62 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title:       Neil Loknath
+subtitle:    Software Developer
+email:       hello@nloko.ca
+author:      Neil Loknath
+description: "Thoughts from a Software Developer who builds things that follow you where ever you go."
+baseurl:     ""
+url:         "https://blog.nloko.ca/"
+date_format: "%b %-d, %Y"
+
+highlighter: pygments
+
+# Google services
+google_analytics:
+google_verification:
+
+# Optional features
+animated:             false
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    true 
+ajaxify_contact_form: false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname: nloko
+
+# Social icons
+github_username: nloko
+bitbucket_username:
+stackoverflow_id:
+twitter_username: nloko
+google_plus_id:
+linkedin_username:
+angellist_username:
+medium_id:
+bitcoin_url:
+paypal_url:
+flattr_button:
+
+# Post sharing icons
+show_sharing_icons: true 
+share_text: 'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook: true 
+share_twitter: true 
+share_googleplus: true 
+share_linkedin: false
+share_digg: false
+share_tumblr: false
+share_reddit: true 
+share_stumbleupon: false
+share_hackernews: true 
 
 # Build settings
-markdown: kramdown
+markdown:     kramdown
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  compressed: true

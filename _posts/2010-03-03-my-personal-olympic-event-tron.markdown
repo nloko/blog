@@ -48,7 +48,7 @@ I should point out that I was not the only one using this idea of maximizing spa
 
 Below is my _Territory _class that I instantiate and use from my evaluation function to calculate each players' space:
 
-```
+~~~ 
 sealed class Territory
 {
 	private GameState gs;
@@ -185,13 +185,13 @@ sealed class Territory
 		scan();
 	}
 }
-```
+~~~ 
 
 It is simply a modified flood fill algorithm (more details on flood fill below) that processes both players at the same time. The _Point_ class is basically just a wrapper around an x and y coordinate. The _GameState_ class maintains the current state of the map, player positions, next moves, etc.
 
 This is only part of my overall strategy, however. Once the opponent has been boxed in, the opponent no longer needs to be considered. Therefore, it makes sense to employ another strategy to conserve the remaining space. I chose to base this strategy on an algorithm called [Flood Fill](http://en.wikipedia.org/wiki/Flood_fill). Below is the method I used:
 
-```
+~~~ 
 private static int FloodFill(GameState gs, int x, int y)
    {
 	Queue<Point> q = new Queue<Point>();
@@ -224,7 +224,7 @@ private static int FloodFill(GameState gs, int x, int y)
 
 	return total;
    }
-```
+~~~ 
 
 As you can see, the flood fill is essentially a breadth-first search that counts the total number of reachable squares on the map. I run a depth-first search in each of the possible directions from my player's position. Each search returns a cumulative flood fill count for the associated direction. The direction with the highest count is the best move. In the event of ties, the direction closest to a wall is chosen. This technique works rather well. However, it has its shortcomings.
 

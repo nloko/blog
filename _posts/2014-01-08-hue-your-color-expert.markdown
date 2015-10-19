@@ -10,7 +10,8 @@ Inspired by the flurry of [I built x apps this year](https://news.ycombinator.co
 
 I'd like you introduce you to the result of my weekend hackathon, [**Hue**](https://play.google.com/store/apps/details?id=ca.nloko.hue).
 
--> ![Hue Your Color Expert. Browse endless colors. Create beautiful schemes and palettes](https://dl.dropbox.com/u/6578423/hue_feature.png "Hue: Your Color Expert") <-
+![Hue Your Color Expert. Browse endless colors. Create beautiful schemes and palettes](https://dl.dropbox.com/u/6578423/hue_feature.png "Hue: Your Color Expert")
+{:.center}
 
 <img width="200" src="https://dl.dropbox.com/u/6578423/hue_colors.png" style="margin:10px;float:left;"/>**Hue** is an Android app based on a simple premise: it should be easy to browse a large variety of colors and view a large variety of colors that are very likely to go well with a certain color.
 
@@ -18,6 +19,8 @@ I'd like you introduce you to the result of my weekend hackathon, [**Hue**](http
 <div style="clear:both;"/>
 
 <img width="200" src="https://dl.dropbox.com/u/6578423/hue_schemes.png" style="margin:10px;float:right;"/>
+
+{:.mt4}
 Tapping a color presents you with a another stream of different color schemes created algorithmically based on rules of color theory.
 
 Viewing schemes also lets you tap colors to learn about their [HEX code](http://en.wikipedia.org/wiki/Web_colors), [RGB](http://en.wikipedia.org/wiki/RGB_color_model) & [HSV](http://en.wikipedia.org/wiki/HSL_and_HSV) values, and even sample tints, shades, and complement colors.

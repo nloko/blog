@@ -74,11 +74,11 @@ However, the application will run if you type `netflix://` into a browser. We ca
 On my computer, I've created a [script](http://en.wikipedia.org/wiki/Batch_file) named `netflix.bat` and saved it in a directory
 that's specified in my [PATH environment variable](http://en.wikipedia.org/wiki/PATH_%28variable%29). The contents look like the following:
 
-```
+~~~ 
 :: Launch Netflix app on Windows 8
 cmd /c "start netflix://"
 exit 0
-```
+~~~ 
 
 Now, I can say *start Netflix* to launch the app without typing a thing!
 
@@ -91,7 +91,8 @@ the desktop.
 
 ## In Stores Now!
 
--><img src="https://dl.dropbox.com/u/6578423/gnexus.png" alt="Ticklebug for Android" width="400" /><-
+<img src="https://dl.dropbox.com/u/6578423/gnexus.png" alt="Ticklebug for Android" width="400" />
+{:.center}
 
 
 If you have an Android device running Android 4.0 or higher, [give Ticklebug a try!](https://play.google.com/store/apps/details?id=com.nloko.android.ticklebug)

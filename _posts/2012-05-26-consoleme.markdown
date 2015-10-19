@@ -40,11 +40,14 @@ It's also pretty easy to use. A recent snapshot of the log is loaded when the ap
 
 I know you like pictures. So, here are some pictures...
 
-->![](https://lh3.googleusercontent.com/-dBZbLpUaDHU/T8BuSA_ORRI/AAAAAAAAB_4/7w9h_THHjF8/s673/Screen+Shot+2012-05-10+at+11.53.15+PM.png "Running on an iPad. Loads and loads of system log data. ["I don't even see the code."](http://www.youtube.com/watch?v=3vAnuBtyEYE&feature=player_detailpage#t=9s)")<-
+![](https://lh3.googleusercontent.com/-dBZbLpUaDHU/T8BuSA_ORRI/AAAAAAAAB_4/7w9h_THHjF8/s673/Screen+Shot+2012-05-10+at+11.53.15+PM.png "Running on an iPad. Loads and loads of system log data. ["I don't even see the code."](http://www.youtube.com/watch?v=3vAnuBtyEYE&feature=player_detailpage#t=9s)")
+{:.center}
 
-->![](https://lh4.googleusercontent.com/-mjr18VR5NXA/T8BuTgftivI/AAAAAAAACAI/4OGt5_ZJ4CE/s545/Screen+Shot+2012-05-10+at+11.54.26+PM.png "Loading on an iPhone")<-
+![](https://lh4.googleusercontent.com/-mjr18VR5NXA/T8BuTgftivI/AAAAAAAACAI/4OGt5_ZJ4CE/s545/Screen+Shot+2012-05-10+at+11.54.26+PM.png "Loading on an iPhone")
+{:.center}
 
-->![](https://lh3.googleusercontent.com/-mN3R6akdwXk/T8BuTX45e0I/AAAAAAAACAA/uSMWHvAbz5E/s545/Screen+Shot+2012-05-10+at+11.54.12+PM.png "As you can see, the design is very minimal yet self-explanatory")<-
+![](https://lh3.googleusercontent.com/-mN3R6akdwXk/T8BuTX45e0I/AAAAAAAACAA/uSMWHvAbz5E/s545/Screen+Shot+2012-05-10+at+11.54.12+PM.png "As you can see, the design is very minimal yet self-explanatory")
+{:.center}
 
 ## You Want It? You Got It!
 

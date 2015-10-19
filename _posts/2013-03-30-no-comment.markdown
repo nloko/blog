@@ -14,7 +14,7 @@ some examples using an old favourite algorithm: merge sort. For the sake of this
 that merge sort is not a widely known algorithm, so we don't fall into the *it's merge sort, duh!*
 trap.
 
-```
+~~~ python
 def mergesort(a):
 	if len(a) <= 1:
 		return a
@@ -39,13 +39,13 @@ def merge(l, r):
 	else:
 		m.extend(r[ri:])
 	return m
-```
+~~~
 
 Here we have a completely correct sorting algorithm coded in one of my favourite languages, [Python](http://www.python.org/). 
 In my opinion, though, correct code is not quite good enough. This code could be improved in some ways. 
 Let's assume that liberally adding comments is one of these ways.
 
-```
+~~~ python
 def mergesort(a):
 	"""Returns a sorted list.
 	"""
@@ -90,7 +90,7 @@ def merge(l, r):
 	else:
 		m.extend(r[ri:])
 	return m
-```
+~~~ 
 
 My once *Intro to Algorithms* professor would really like this version. But, you, however, *shouldn't* like this.
 Let me explain.
@@ -106,7 +106,7 @@ what the code is doing**.
 It could be argued, though, that without the prologue comments, the readability is suffering because the variable 
 names don't convey enough about the code. That's a valid point. So, let's try something different.
 
-```
+~~~ python
 def mergesort(unsorted):
 	"""Returns a sorted list. 
 
@@ -148,7 +148,7 @@ def merge(left, right):
 		merged.extend(right[right_index:])
 	
 	return merged
-```
+~~~ 
 
 This version follows the **no comment is the best comment** approach. The variable names
 have been modified (and according to [Python style guidelines](http://www.python.org/dev/peps/pep-0008/))
