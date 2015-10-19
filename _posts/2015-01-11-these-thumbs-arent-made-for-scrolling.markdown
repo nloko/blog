@@ -13,23 +13,19 @@ Sure, we could implement one of those [trendy scroll-to-top](http://davidwalsh.n
 Below, on the left, you'll find the usual collapsing section user experience you know and love. On the right, you'll find the same interface with a subtle improvement.
 
 
-<table  border="0" style="margin:auto;">
-<tr>
-<th>Without Improvement</th>
-<th>With Improvement</th>
-</tr>
-<tr>
-<td>
-<iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_before.html" seamless>
-<p>Your browser sucks.</p>
-</iframe>
-</td>
-<td>
-<iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_after.html" seamless>
-<p>Your browser sucks.</p>
-</iframe>
-</td>
-</tr>
-</table>
+<div class="clearfix">
+  <div class="sm-col sm-col-6">
+  <h5>Without Improvement</h5>
+  <iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_before.html" seamless>
+  <p>Your browser sucks.</p>
+  </iframe>
+  </div>
+  <div class="sm-col sm-col-6">
+    <h5>With Improvement</h5>
+    <iframe style="border: 1px solid #ddd;border-radius: 4px;margin: 10px;"  height="480" width="320" src="/collapse_demo_after.html" seamless>
+    <p>Your browser sucks.</p>
+    </iframe>
+  </div>
+</div>
 
 You'll notice that the one of the right let's you collapse the section you're browsing even after you've zoomed past its title. This lets you move up and down without the thumb workout. The title also shinks a bit to give you that little bit of extra real estate. Pretty nifty, eh?
