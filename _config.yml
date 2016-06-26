@@ -9,7 +9,7 @@ url:         "http://blog.nloko.ca/"
 date_format: "%b %-d, %Y"
 timezone: America/Toronto
 
-highlighter: pygments
+highlighter: rouge
 
 # Google services
 google_analytics:
