@@ -7,7 +7,7 @@ title: About
 ---
 
 
-I build software that goes where ever you do. I'm currently at Achievers Corp. heading up their Mobile Development.
+I build software that goes where ever you do. I'm currently at [Achievers in Toronto](https://achievers.com) heading up their Mobile Development.
 
 {:.mt4}
 ## Projects
