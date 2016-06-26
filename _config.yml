@@ -8,7 +8,7 @@ baseurl:     ""
 url:         "http://blog.nloko.ca/"
 date_format: "%b %-d, %Y"
 
-highlighter: pygments
+highlighter: rouge
 
 # Google services
 google_analytics:
