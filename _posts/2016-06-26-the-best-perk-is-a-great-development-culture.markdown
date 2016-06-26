@@ -3,7 +3,7 @@ layout: post
 title: "The Best Perk Is A Great Development Culture"
 date: 2016-06-26 15:25:24 -0500
 comments: true
-categories: Leadership, Culture, Teamwork, Engagement
+categories: Leadership Culture Teamwork Engagement
 ---
 
 # The Best Perk Is A Great Development Culture
