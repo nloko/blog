@@ -7,6 +7,7 @@ description: "Thoughts from a Software Developer who builds things that follow y
 baseurl:     ""
 url:         "http://blog.nloko.ca/"
 date_format: "%b %-d, %Y"
+timezone: America/Toronto
 
 highlighter: pygments
 
