@@ -1,3 +1,11 @@
+---
+layout: post
+title: "The Best Perk Is A Great Development Culture"
+date: 2016-06-26 15:25:24 -0500
+comments: true
+categories: Leadership, Culture, Teamwork, Engagement
+---
+
 # The Best Perk Is A Great Development Culture
 What makes a great development culture? Free drinks? Free breakfast? Everyday happy hour? Sure, those things are attractive. But, cool perks are par for the course these days. Virtually every startup and their uncle with a round of funding have perks of some sort. So, if perks are ubiquitous, there must be more to a great development culture than perks.
 I’ve been a Developer, a Team Lead, and now a Manager at [Achievers](https://achievers.com). Throughout my career there, I’ve been exposed to many habits and behaviours that have really influenced my own day-to-day happiness and engagement. When writing this piece, I took a step back and really thought about what I’ve valued during my career working *as a developer*. From that perspective, I’d like to recommend a few ideas that I believe will help you achieve and maintain a development culture where happy, engaged teams can thrive.
