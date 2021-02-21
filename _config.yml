@@ -1,9 +1,9 @@
 # Site settings
 title:       Neil Loknath
-subtitle:    Always thinking. Thoughts occassionally spill out here.
+subtitle:    ☕️🍺🏀🎾⛳️🚴🏾‍♂️🏋🏾🎧🎸💻📱☀️👟👨‍👩‍👧
 email:       hello@nloko.ca
 author:      Neil Loknath
-description: "Writings about nothing specific. I tend to focus on software."
+description: "Software, Apps, and Stuff."
 baseurl:     "/blog"
 url:         "http://www.nloko.ca"
 date_format: "%b %-d, %Y"
