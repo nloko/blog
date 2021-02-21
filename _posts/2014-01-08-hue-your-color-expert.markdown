@@ -10,15 +10,15 @@ Inspired by the flurry of [I built x apps this year](https://news.ycombinator.co
 
 I'd like you introduce you to the result of my weekend hackathon, [**Hue**](https://play.google.com/store/apps/details?id=ca.nloko.hue).
 
-![Hue Your Color Expert. Browse endless colors. Create beautiful schemes and palettes](https://dl.dropbox.com/u/6578423/hue_feature.png "Hue: Your Color Expert")
+![Hue Your Color Expert. Browse endless colors. Create beautiful schemes and palettes](/blog/images/hue_feature.png "Hue: Your Color Expert")
 {:.center}
 
-<img width="200" src="https://dl.dropbox.com/u/6578423/hue_colors.png" style="margin:10px;float:left;"/>**Hue** is an Android app based on a simple premise: it should be easy to browse a large variety of colors and view a large variety of colors that are very likely to go well with a certain color.
+<img width="200" src="/blog/images/hue_colors.png" style="margin:10px;float:left;"/>**Hue** is an Android app based on a simple premise: it should be easy to browse a large variety of colors and view a large variety of colors that are very likely to go well with a certain color.
 
 **Hue** gives you you get an endless stream of colors to choose from. Want more colors? just keep scrolling.  
 {:.clearfix}
 
-<img width="200" src="https://dl.dropbox.com/u/6578423/hue_schemes.png" style="margin:10px;float:right;"/>
+<img width="200" src="/blog/images/hue_schemes.png" style="margin:10px;float:right;"/>
 
 {:.mt4}
 Tapping a color presents you with a another stream of different color schemes created algorithmically based on rules of color theory.

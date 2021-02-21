@@ -91,7 +91,7 @@ the desktop.
 
 ## In Stores Now!
 
-<img src="https://dl.dropbox.com/u/6578423/gnexus.png" alt="Ticklebug for Android" width="400" />
+<img src="/blog/images/gnexus.png" alt="Ticklebug for Android" width="400" />
 {:.center}
 
 

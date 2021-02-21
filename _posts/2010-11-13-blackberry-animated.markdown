@@ -156,6 +156,6 @@ public class Animation {
 }
 ~~~ 
 
-Without going into too much detail, what the class does is abstract away all the boring details of managing when and how often to display animated frames. All the user of the class needs to do is tell it the duration of the animation, when to start, and listen for events. To see it in action, here's a [sample project](http://dl.dropbox.com/u/6578423/animationtest.zip) that simply scrolls in the word "Hello" from the left and the word "World" from the top until they both meet in the centre to form the sentence (can you guess?) ..."Hello World!"
+Without going into too much detail, what the class does is abstract away all the boring details of managing when and how often to display animated frames. All the user of the class needs to do is tell it the duration of the animation, when to start, and listen for events. To see it in action, here's a [sample project](/blog/images/animationtest.zip) that simply scrolls in the word "Hello" from the left and the word "World" from the top until they both meet in the centre to form the sentence (can you guess?) ..."Hello World!"
 
 In the coming weeks, I hope to find the time to add an [Interpolator](http://en.wikipedia.org/wiki/Interpolation) to this class for rendering effects like acceleration, deceleration, and elastic effects ie. overshooting a target and bouncing back. Fun stuff!

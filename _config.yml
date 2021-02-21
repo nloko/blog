@@ -4,8 +4,8 @@ subtitle:    Always thinking. Thoughts occassionally spill out here.
 email:       hello@nloko.ca
 author:      Neil Loknath
 description: "Writings about nothing specific. I tend to focus on software."
-baseurl:     ""
-url:         "http://blog.nloko.ca/"
+baseurl:     "/blog"
+url:         "http://www.nloko.ca"
 date_format: "%b %-d, %Y"
 timezone: America/Toronto
 
