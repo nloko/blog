@@ -6,7 +6,7 @@ comments: true
 categories: Leadership Culture Teamwork Engagement
 ---
 
-![Developer coding](/images/work-731198_1280.jpg)
+![Developer coding](/blog/images/work-731198_1280.jpg)
 
   What makes a great development culture? Free drinks? Free breakfast? Everyday happy hour? Sure, those things are attractive. But, cool perks are par for the course these days. Virtually every startup and their uncle with a round of funding have perks of some sort. So, if perks are ubiquitous, there must be more to a great development culture than perks.
 
@@ -51,7 +51,7 @@ Use appropriate tools to facilitate the creative process. We use Slack quite hea
 Most importantly, say __*thank you*__. Say, *great work*. Say, *you’re awesome*. Say it and *mean it*. Simple.
 
 ## Happiness Is The Best Perk
-![happy woman](/images/woman-591576_1280.jpg)
+![happy woman](/blog/images/woman-591576_1280.jpg)
 
   While not an exhaustive list, the above ideas will go a long way to building a culture where developers can not only provide value in many different ways, but *feel* they’re providing value as well. Happy teams are teams that can understand why their contributions have an impact. When they can contribute to the entire development process all the way from ideation to delivery, they’ll develop a heightened sense of product ownership, and therefore feel a strong desire to improve things.
 
