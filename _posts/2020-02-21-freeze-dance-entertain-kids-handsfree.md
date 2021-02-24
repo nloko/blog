@@ -32,6 +32,6 @@ This app was born out of my desire to reduce the small cognitive load required t
 ## Download
 <div class='clearfix'>
 <img src='/blog/images/freezedance-freeze.png' class="center col col-5" />
-<div class="col col-7 p3">The best part is it's free! <a href='https://apps.apple.com/ca/app/freeze-dance/id1554016194?itsct=apps_box&itscg=30200'>Download</a> it from the App Store today. It'll be ad-free for a limited time.
-<a href="https://apps.apple.com/ca/app/freeze-dance/id1554016194?itsct=apps_box&amp;itscg=30200"><img class='p3' style='width: 50%;' src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1613779200&h=d0560e1608e5851cb40eda56757173c2" alt="Download on the App Store"></a></div> 
+<div class="col col-7 p3">The best part is it's free! <a target='_blank' href='https://apple.co/3slFbAD'>Download</a> it from the App Store today. It'll be ad-free for a limited time.
+<a target='_blank' href="https://apple.co/3slFbAD"><img class='p3' style='width: 50%;' src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1613779200&h=d0560e1608e5851cb40eda56757173c2" alt="Download on the App Store"></a></div>
 </div>
